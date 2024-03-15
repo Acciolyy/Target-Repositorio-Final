@@ -1,0 +1,59 @@
+Questão 1:
+int INDICE = 13, SOMA = 0, K = 0;
+
+enquanto K < INDICE faça
+
+{
+
+K = K + 1;
+
+SOMA = SOMA + K;
+
+}
+
+imprimir(SOMA);
+
+///////////////////
+
+SOMA = 91
+
+
+
+Questão 2:
+A) 1, 3, 5, 7, ...
+O próximo número sempre será o último + 2: (n + 2) para 7 + 2 = 9
+
+B) 2, 4, 8, 16, 32, 64, ...
+O próximo número sempre será o último *2 (vezes dois): (n * 2) para 64 * 2 = 128
+
+C) 0, 1, 4, 9, 16, 25, 36, ...
+O próximo número sempre será o quadrado perfeito do próximo da órdem numérica (0² = 0, 1² = 1, 2² = 4): n² para 7² = 49
+
+D) 4, 16, 36, 64, ...
+Semelhante ao anterior, porém com ordem modificada, o próximo é o quadrado perfeito seguindo a ordem de números pares (2² = 4, 4² = 16, 6² = 36, 8² = 64): 10² = 100
+
+E) 1, 1, 2, 3, 5, 8, ...
+Segue a Sequência de Fibonacci, somando os dois últimos números e resultando no próximo (1+1=2, 2+1=3, 3+2=5): Logo, o próximo número é 13 = 8+5
+
+F) 2, 10, 12, 16, 17, 18, 19, ...
+A sequência segue a soma de +8, +2, +4, +1,+1,+1: Então o próximo número é +8 novamente, seguindo a ordem de três +1 e volta para +8: 19 +8 = 27
+
+
+Questão 4:
+Situação 1: Separo por portas 1, 2 e 3. Depois disso, ligo um dos três interruptores, e entro na porta 1, se a lâmpada estiver ligada, acertei o interruptor. Então volto e enumero o interruptor ligado para a porta 1, e ligo mais um interruptor e adentro
+a porta 2, se a lâmpada estiver apagada, descobri todos os interruptores, volto e enumero os outros dois interruptores para respectivas portas, o primeiro interruptor ja estava enumerado, e o segundo ligado é o da porta 2, assim como o que estava desligado
+que pertence à porta 3. (ou numero as portas 1,2,3 e os interruptores X,Y e Z, e faço o mesmo processo)
+
+Situação 2: Separo portas 1, 2 e 3. Depois disso, ligo um dos três interruptores, e entro na porta 1, se a lâmpada estiver *desligada*, eu volto e desligo o interruptor e ligo outro, e vou até a porta 2, se a lâmpada estiver ligada, eu volto e enumero
+o interruptor ligado para a porta 2, o que eu desliguei para a porta 3 e o que eu não mexi para a porta 1. (ou classifico as portas 1,2,3 e os interruptores X,Y e Z, e faço o mesmo processo)
+
+Situação 3: Separo por portas 1,2 e 3. Depois disso ligo um dos três interruptores, e entro na porta 1, se a lâmpada estiver ligada, acertei o interruptor. Então volto e enumero o interruptor ligado para a porta 1, e ligo mais um interruptor e adentro
+a porta 2, se a lâmpada estiver *ligada*, eu volto e designo o outro interruptor ligado à porta 2 e o desligado à porta 3 (ou enumero as portas 1,2 e 3 e os interruptores X,Y,Z)
+
+Situação 4: Separo portas 1, 2 e 3. Depois disso, ligo um dos três interruptores, e entro na porta 1, se a lâmpada estiver *desligada*, eu volto e desligo o interruptor e ligo outro, e vou até a porta 2, se a lâmpada estiver *desligada*, sei que tenho 50% 
+de acertar os interruptores
+
+Situação extra: Se tiver como, enumero as portas 1,2 e 3, ligo o primeiro interruptor deixo por um tempo, logo depois desligo e ligo outro, adentro a porta 1, se a luz estiver acesa, sei qual interruptor é da porta 1, volto e designo, ligo outro interruptor
+e adentro a porta 2, se estiver ligada eu ja sei todos os interruptores, se estiver desligada, também sei. Entretanto, se entrei na porta 1 e a lampada estiver
+desligada, eu toco e vejo se está quente, se estiver, sei que foi o primeiro interruptor que liguei e deixei ligado por um tempo, volto e designo. Depois disso adentro a porta 2, se estiver ligada, sei qual é o interruptor e por consequência também sei o da porta 3
+
